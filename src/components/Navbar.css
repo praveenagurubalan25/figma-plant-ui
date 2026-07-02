@@ -1,0 +1,599 @@
+/* ==========================================================
+                    PREMIUM NAVBAR
+========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Outfit",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+/*==========================================================
+                        NAVBAR
+==========================================================*/
+
+.navbar{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    padding:30px 0;
+
+    transition:.4s ease;
+
+}
+
+/* Container */
+
+.navbar-container{
+
+    width:92%;
+
+    max-width:1380px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/*==========================================================
+                          LOGO
+==========================================================*/
+
+.navbar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+.navbar-logo img{
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+    transition:.35s ease;
+
+    filter:
+    drop-shadow(0 4px 15px rgba(106,223,91,.18));
+
+}
+
+.navbar-logo:hover img{
+
+    transform:
+    rotate(-6deg)
+    scale(1.05);
+
+}
+
+.navbar-logo h1{
+
+    color:#FFFFFF;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:-0.6px;
+
+    line-height:1;
+
+}
+
+/*==========================================================
+                      NAVIGATION
+==========================================================*/
+
+.navbar-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:52px;
+
+}
+
+.navbar-links a{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#F3F3F3;
+
+    font-size:16px;
+
+    font-weight:400;
+
+    transition:.35s;
+
+}
+
+/* underline */
+
+.navbar-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:#8BEA76;
+
+    transition:.35s ease;
+
+}
+
+.navbar-links a:hover{
+
+    color:#8BEA76;
+
+}
+
+.navbar-links a:hover::after{
+
+    width:100%;
+
+}
+
+.navbar-links .active{
+
+    color:#8BEA76;
+
+}
+
+.navbar-links .active::after{
+
+    width:100%;
+
+}
+
+/* dropdown icon */
+
+.nav-arrow{
+
+    font-size:14px;
+
+    margin-top:1px;
+
+    transition:.3s;
+
+}
+
+.navbar-links a:hover .nav-arrow{
+
+    transform:rotate(180deg);
+
+}
+
+/*==========================================================
+                     RIGHT ICONS
+==========================================================*/
+
+.navbar-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+.icon-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    color:#FFFFFF;
+
+    font-size:21px;
+
+    transition:.35s;
+
+}
+
+.icon-btn:hover{
+
+    color:#8BEA76;
+
+    transform:
+    translateY(-3px)
+    scale(1.08);
+
+}
+
+.menu-btn{
+
+    font-size:24px;
+
+}
+
+/*==========================================================
+                PREMIUM HOVER GLOW
+==========================================================*/
+
+.navbar-logo h1{
+
+    transition:.35s;
+
+}
+
+.navbar-logo:hover h1{
+
+    color:#8BEA76;
+
+}
+
+.icon-btn svg{
+
+    stroke-width:1.8;
+
+}
+
+/* ==========================================================
+                    PREMIUM NAVBAR
+========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Outfit",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+/*==========================================================
+                        NAVBAR
+==========================================================*/
+
+.navbar{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    padding:30px 0;
+
+    transition:.4s ease;
+
+}
+
+/* Container */
+
+.navbar-container{
+
+    width:92%;
+
+    max-width:1380px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/*==========================================================
+                          LOGO
+==========================================================*/
+
+.navbar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+.navbar-logo img{
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+    transition:.35s ease;
+
+    filter:
+    drop-shadow(0 4px 15px rgba(106,223,91,.18));
+
+}
+
+.navbar-logo:hover img{
+
+    transform:
+    rotate(-6deg)
+    scale(1.05);
+
+}
+
+.navbar-logo h1{
+
+    color:#FFFFFF;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:-0.6px;
+
+    line-height:1;
+
+}
+
+/*==========================================================
+                      NAVIGATION
+==========================================================*/
+
+.navbar-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:52px;
+
+}
+
+.navbar-links a{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#F3F3F3;
+
+    font-size:16px;
+
+    font-weight:400;
+
+    transition:.35s;
+
+}
+
+/* underline */
+
+.navbar-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:#8BEA76;
+
+    transition:.35s ease;
+
+}
+
+.navbar-links a:hover{
+
+    color:#8BEA76;
+
+}
+
+.navbar-links a:hover::after{
+
+    width:100%;
+
+}
+
+.navbar-links .active{
+
+    color:#8BEA76;
+
+}
+
+.navbar-links .active::after{
+
+    width:100%;
+
+}
+
+/* dropdown icon */
+
+.nav-arrow{
+
+    font-size:14px;
+
+    margin-top:1px;
+
+    transition:.3s;
+
+}
+
+.navbar-links a:hover .nav-arrow{
+
+    transform:rotate(180deg);
+
+}
+
+/*==========================================================
+                     RIGHT ICONS
+==========================================================*/
+
+.navbar-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+.icon-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    color:#FFFFFF;
+
+    font-size:21px;
+
+    transition:.35s;
+
+}
+
+.icon-btn:hover{
+
+    color:#8BEA76;
+
+    transform:
+    translateY(-3px)
+    scale(1.08);
+
+}
+
+.menu-btn{
+
+    font-size:24px;
+
+}
+
+/*==========================================================
+                PREMIUM HOVER GLOW
+==========================================================*/
+
+.navbar-logo h1{
+
+    transition:.35s;
+
+}
+
+.navbar-logo:hover h1{
+
+    color:#8BEA76;
+
+}
+
+.icon-btn svg{
+
+    stroke-width:1.8;
+
+}

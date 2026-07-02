@@ -1,0 +1,221 @@
+.review-section{
+    width:100%;
+    background:#07130C;
+    padding:120px 0;
+    position:relative;
+}
+
+/* Title */
+
+.review-title{
+    text-align:center;
+    color:#fff;
+    font-size:54px;
+    font-weight:700;
+    margin-bottom:80px;
+}
+
+/* Grid */
+
+.review-grid{
+    width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+/* Card */
+
+.review-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:35px;
+    padding:30px;
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+    box-shadow:0 30px 60px rgba(0,0,0,0.35);
+    transition:0.4s;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+/* Top section */
+
+.review-top{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+/* Avatar (simple clean circle - NO STACK POPUPS) */
+
+.avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#7BE56C,#2E5A3D);
+}
+
+/* Name */
+
+.review-top h3{
+    color:#fff;
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+/* Stars */
+
+.stars{
+    color:#FFD84D;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+/* Text */
+
+.review-card p{
+    color:rgba(255,255,255,0.75);
+    font-size:15px;
+    line-height:26px;
+}
+
+/*==========================================
+        CUSTOMER REVIEW - PART 2
+==========================================*/
+
+/* Background Glow */
+
+.review-section::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    left:-280px;
+    top:-220px;
+    border-radius:50%;
+    background:rgba(123,229,108,.08);
+    filter:blur(140px);
+    z-index:0;
+}
+
+.review-section::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    right:-150px;
+    bottom:-120px;
+    border-radius:50%;
+    background:rgba(255,255,255,.04);
+    filter:blur(120px);
+    z-index:0;
+}
+
+/* Bring content above glow */
+
+.review-title,
+.review-grid{
+    position:relative;
+    z-index:2;
+}
+
+/* Glass Shine */
+
+.review-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:35px;
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.10),
+        rgba(255,255,255,0)
+    );
+    pointer-events:none;
+}
+
+/* Green Glow */
+
+.review-card::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(123,229,108,.12);
+    filter:blur(70px);
+    top:-40px;
+    right:-40px;
+    opacity:.4;
+}
+
+/* Hover */
+
+.review-card:hover{
+    transform:translateY(-12px);
+    box-shadow:
+        0 35px 70px rgba(0,0,0,.45),
+        0 0 35px rgba(123,229,108,.18);
+}
+
+/* Avatar Border */
+
+.avatar{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid rgba(255,255,255,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    flex-shrink:0;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .review-grid{
+
+        width:95%;
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .review-section{
+
+        padding:80px 20px;
+
+    }
+
+    .review-title{
+
+        font-size:42px;
+        margin-bottom:60px;
+
+    }
+
+    .review-grid{
+
+        width:100%;
+        grid-template-columns:1fr;
+        gap:30px;
+
+    }
+
+    .review-card{
+
+        max-width:360px;
+        margin:auto;
+
+    }
+
+}

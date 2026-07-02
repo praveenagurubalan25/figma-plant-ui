@@ -1,0 +1,566 @@
+/*=========================================
+        O2 PLANTS SECTION
+=========================================*/
+
+.o2-section{
+
+    width:100%;
+
+    background:#07130C;
+
+    padding:120px 0;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Background Glow */
+
+.o2-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    left:-250px;
+
+    top:-200px;
+
+    border-radius:50%;
+
+    background:rgba(123,229,108,.08);
+
+    filter:blur(140px);
+
+}
+
+.o2-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    right:-150px;
+
+    bottom:-100px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+    filter:blur(120px);
+
+}
+
+/* Title */
+
+.o2-title{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:56px;
+
+    font-weight:700;
+
+    margin-bottom:80px;
+
+    position:relative;
+
+}
+
+.o2-title::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:50px;
+
+    height:90px;
+
+    border-left:5px solid rgba(206, 175, 0, 0.801);
+
+    border-bottom:5px solid rgba(206, 175, 0, 0.801);
+
+    left:40%;
+
+    transform:translateX(-50px);
+
+    bottom:-8px;
+
+    border-radius:0 0 12px 0;
+}
+
+.o2-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:50px;
+
+    height:90px;
+
+    border-right:5px solid rgba(206, 175, 0, 0.801);
+
+    border-top:5px solid rgba(206, 175, 0, 0.801);
+
+    left:60%;
+
+    transform:translateX(-18px);
+
+    bottom:-8px;
+
+    border-radius:0 0 12px 0;
+
+}
+
+/* Main Card */
+
+.o2-card{
+
+    width:1180px;
+
+    height:500px;
+
+    margin:auto;
+
+    border-radius:48px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    display:grid;
+
+    grid-template-columns:45% 55%;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:visible;
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.04);
+
+}
+
+/* Glass Shine */
+
+.o2-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:48px;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,0)
+    );
+
+    pointer-events:none;
+
+}
+
+/* Image Side */
+
+.o2-image{
+
+    position:relative;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* Plant Glow */
+
+.o2-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(123,229,108,.18);
+
+    filter:blur(80px);
+
+}
+
+/* Plant Image */
+
+.o2-image img{
+
+    width:430px;
+
+    object-fit:contain;
+
+    position:relative;
+
+    z-index:2;
+
+    filter:drop-shadow(
+        0 35px 35px rgba(0,0,0,.45)
+    );
+
+    transition:.4s;
+
+}
+
+.o2-card:hover .o2-image img{
+
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
+}
+
+/* Content */
+
+.o2-content{
+
+    width:82%;
+
+    margin:auto;
+
+}
+
+/* Heading */
+
+.o2-content h3{
+
+    color:white;
+
+    font-size:38px;
+
+    line-height:48px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+/* Paragraph */
+
+.o2-content p{
+
+    color:rgba(255,255,255,.75);
+
+    font-size:17px;
+
+    line-height:30px;
+
+    margin-bottom:24px;
+
+}
+
+/*=========================================
+        O2 PLANTS - PART 2
+=========================================*/
+
+/* Bottom Area */
+
+.o2-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:35px;
+
+}
+
+/* Explore Button */
+
+.o2-bottom button{
+
+    width:150px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    background:rgba(255,255,255,.06);
+
+    color:#fff;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+}
+
+.o2-bottom button:hover{
+
+    background:#7BE56C;
+
+    color:#08130D;
+
+    border-color:#7BE56C;
+
+    transform:translateY(-3px);
+
+}
+
+/* Slider */
+
+.slider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:16px;
+
+}
+
+.slider svg{
+
+    width:20px;
+
+    height:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.slider svg:hover{
+
+    color:#7BE56C;
+
+    transform:scale(1.2);
+
+}
+
+.slider span{
+
+    color:#fff;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+}
+
+/* Bottom Dots */
+
+.dots{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.dots span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.35);
+
+    transition:.35s;
+
+}
+
+.dots .active{
+
+    width:28px;
+
+    border-radius:20px;
+
+    background:#7BE56C;
+
+}
+
+/* Floating Animation */
+
+@keyframes floatO2{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.o2-image img{
+
+    animation:floatO2 5s ease-in-out infinite;
+
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .o2-card{
+
+        width:95%;
+
+        height:auto;
+
+        grid-template-columns:1fr;
+
+        padding:60px 35px;
+
+    }
+
+    .o2-image{
+
+        margin-bottom:40px;
+
+    }
+
+    .o2-image img{
+
+        width:320px;
+
+    }
+
+    .o2-content{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .o2-bottom{
+
+        justify-content:center;
+
+        gap:35px;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .o2-section{
+
+        padding:80px 20px;
+
+    }
+
+    .o2-title{
+
+        font-size:42px;
+
+        margin-bottom:60px;
+
+    }
+
+    .o2-card{
+
+        border-radius:30px;
+
+        padding:40px 20px;
+
+    }
+
+    .o2-content h3{
+
+        font-size:28px;
+
+        line-height:38px;
+
+    }
+
+    .o2-content p{
+
+        font-size:15px;
+
+        line-height:27px;
+
+    }
+
+    .o2-image img{
+
+        width:250px;
+
+    }
+
+    .o2-bottom{
+
+        flex-direction:column;
+
+        gap:25px;
+
+    }
+
+}

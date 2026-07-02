@@ -1,0 +1,425 @@
+/*==========================================
+        TOP SELLING PLANTS
+==========================================*/
+
+.selling{
+
+    width:100%;
+
+    background:#07130C;
+
+    padding:120px 0 140px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Background Glow */
+
+.selling::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    left:-300px;
+
+    top:-200px;
+
+    background:rgba(122,255,120,.08);
+
+    filter:blur(130px);
+
+}
+
+.selling::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    right:-150px;
+
+    bottom:-100px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+    filter:blur(120px);
+
+}
+
+/* Title */
+
+.selling-title{
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:56px;
+
+    font-weight:700;
+
+    margin-bottom:95px;
+
+    position:relative;
+
+}
+
+.selling-title::after{
+
+    content:"";
+
+    width:55px;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:#A8F28E;
+
+    position:absolute;
+
+    bottom:-15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+/* Grid */
+
+.selling-grid{
+
+    width:1180px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:65px 40px;
+
+}
+
+/* Card */
+
+.selling-card{
+
+    position:relative;
+
+    height:395px;
+
+    border-radius:42px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(28px);
+
+    -webkit-backdrop-filter:blur(28px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 30px 60px rgba(0,0,0,.35),
+
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    transition:.45s;
+
+    overflow:visible;
+
+}
+
+/* Glass Shine */
+
+.selling-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:42px;
+
+    background:linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.08),
+
+        rgba(255,255,255,0)
+
+    );
+
+    pointer-events:none;
+
+}
+
+/* Image */
+
+.selling-image{
+
+    width:220px;
+
+    position:absolute;
+
+    top:-55px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    object-fit:contain;
+
+    filter:drop-shadow(
+
+        0 35px 30px rgba(0,0,0,.40)
+
+    );
+
+    transition:.45s;
+
+    z-index:10;
+
+}
+
+/* Hover */
+
+.selling-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.selling-card:hover .selling-image{
+
+    transform:
+
+    translateX(-50%)
+
+    translateY(-10px)
+
+    scale(1.05);
+
+}
+
+/* Content */
+
+.selling-content{
+
+    padding:
+
+        175px
+
+        24px
+
+        25px;
+
+}
+
+/* Name */
+
+.selling-content h3{
+
+    color:white;
+
+    font-size:31px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+    line-height:38px;
+
+}
+
+/* Description */
+
+.selling-content p{
+
+    color:rgba(255,255,255,.72);
+
+    font-size:15px;
+
+    line-height:24px;
+
+    height:70px;
+
+    overflow:hidden;
+
+}
+
+/*==========================================
+        TOP SELLING - PART 2
+==========================================*/
+
+/* Bottom Row */
+
+.selling-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:18px;
+}
+
+/* Price */
+
+.selling-bottom h4{
+    color:#fff;
+    font-size:34px;
+    font-weight:600;
+}
+
+/* Shopping Button */
+
+.selling-bottom button{
+    width:46px;
+    height:46px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.06);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.35s;
+    backdrop-filter:blur(15px);
+}
+
+.selling-bottom button:hover{
+    background:#7BE56C;
+    color:#08130D;
+    transform:translateY(-3px);
+}
+
+/* Plant Floating Animation */
+
+@keyframes floatPlant{
+
+    0%{
+        transform:translateX(-50%) translateY(0);
+    }
+
+    50%{
+        transform:translateX(-50%) translateY(-10px);
+    }
+
+    100%{
+        transform:translateX(-50%) translateY(0);
+    }
+
+}
+
+.selling-image{
+    animation:floatPlant 5s ease-in-out infinite;
+}
+
+/* Green Glow */
+
+.selling-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(123,229,108,.12);
+
+    filter:blur(70px);
+
+    top:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:0;
+
+}
+
+/* Bring Image Above Glow */
+
+.selling-image{
+    z-index:5;
+}
+
+/* Glass Border */
+
+.selling-card{
+    outline:1px solid rgba(255,255,255,.04);
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .selling-grid{
+
+        width:95%;
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .selling{
+
+        padding:80px 20px;
+
+    }
+
+    .selling-grid{
+
+        width:100%;
+
+        grid-template-columns:1fr;
+
+        gap:70px;
+
+    }
+
+    .selling-title{
+
+        font-size:42px;
+
+        margin-bottom:70px;
+
+    }
+
+    .selling-card{
+
+        max-width:340px;
+
+        margin:auto;
+
+    }
+
+}

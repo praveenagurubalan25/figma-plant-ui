@@ -1,0 +1,388 @@
+/*==========================================
+            FOOTER
+==========================================*/
+
+.footer{
+
+    width:100%;
+    background:#111E10;
+    padding:90px 0 45px;
+    overflow:hidden;
+
+}
+
+.footer-container{
+
+    width:1180px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1.4fr .8fr 1fr;
+    gap:90px;
+
+    align-items:flex-start;
+
+}
+
+/*======================
+        LEFT
+=======================*/
+
+.footer-left .logo{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    margin-bottom:35px;
+
+}
+
+.footer-left .logo img{
+
+    width:56px;
+    height:56px;
+    object-fit:contain;
+
+    filter:drop-shadow(
+        0 12px 18px rgba(0,0,0,.30)
+    );
+
+}
+
+.footer-left h2{
+
+    color:#F5F5F5;
+    font-size:50px;
+    font-weight:700;
+
+}
+
+.footer-left p{
+
+    width:390px;
+
+    color:#ECECEC;
+
+    font-size:17px;
+
+    line-height:34px;
+
+    margin-bottom:70px;
+
+}
+
+/*======================
+      SOCIAL
+=======================*/
+
+.social{
+
+    display:flex;
+    gap:34px;
+
+}
+
+.social a{
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+.social a:hover{
+
+    color:#89D26A;
+
+}
+
+/*======================
+      QUICK LINKS
+=======================*/
+
+.footer-middle h3{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:45px;
+
+}
+
+.footer-middle{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.footer-middle a{
+
+    width:max-content;
+
+    color:#ECECEC;
+
+    text-decoration:underline;
+
+    font-size:22px;
+
+    margin-bottom:26px;
+
+    transition:.3s;
+
+}
+
+.footer-middle a:hover{
+
+    color:#89D26A;
+
+    transform:translateX(8px);
+
+}
+/*==========================
+      RIGHT SECTION
+===========================*/
+
+.footer-right{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.footer-right h3{
+
+    color:#fff;
+
+    font-size:34px;
+
+    margin-bottom:42px;
+
+}
+
+/* Subscribe Box */
+
+.subscribe{
+
+    width:100%;
+
+    height:58px;
+
+    border:2px solid rgba(255,255,255,.75);
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    background:transparent;
+
+}
+
+/* Input */
+
+.subscribe input{
+
+    flex:1;
+
+    height:100%;
+
+    background:transparent;
+
+    border:none;
+
+    outline:none;
+
+    padding:0 20px;
+
+    color:#fff;
+
+    font-size:18px;
+
+}
+
+.subscribe input::placeholder{
+
+    color:#CFCFCF;
+
+}
+
+/* Button */
+
+.subscribe button{
+
+    width:160px;
+
+    height:100%;
+
+    border:none;
+
+    background:#F7F7F7;
+
+    color:#222;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.subscribe button:hover{
+
+    background:#89D26A;
+
+    color:#08130D;
+
+}
+
+/* Copyright */
+
+.footer-right p{
+
+    margin-top:145px;
+
+    color:#ECECEC;
+
+    font-size:22px;
+
+}
+
+/*==========================
+        RESPONSIVE
+===========================*/
+
+@media(max-width:1200px){
+
+    .footer-container{
+
+        width:92%;
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .footer-left p{
+
+        width:100%;
+
+    }
+
+    .footer-right p{
+
+        margin-top:60px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer{
+
+        padding:70px 20px;
+
+    }
+
+    .footer-left h2{
+
+        font-size:36px;
+
+    }
+
+    .footer-left p{
+
+        font-size:16px;
+
+        line-height:30px;
+
+    }
+
+    .footer-middle h3,
+    .footer-right h3{
+
+        font-size:28px;
+
+    }
+
+    .footer-middle a{
+
+        font-size:18px;
+
+    }
+
+    .subscribe{
+
+        flex-direction:column;
+
+        height:auto;
+
+        border:none;
+
+        gap:15px;
+
+    }
+
+    .subscribe input{
+
+        width:100%;
+
+        height:55px;
+
+        border:2px solid rgba(255,255,255,.6);
+
+        border-radius:8px;
+
+    }
+
+    .subscribe button{
+
+        width:100%;
+
+        height:55px;
+
+        border-radius:8px;
+
+    }
+
+    .social{
+
+        gap:22px;
+
+    }
+
+    .social a{
+
+        font-size:28px;
+
+    }
+
+    .footer-right p{
+
+        margin-top:40px;
+
+        font-size:18px;
+
+        text-align:center;
+
+    }
+
+}

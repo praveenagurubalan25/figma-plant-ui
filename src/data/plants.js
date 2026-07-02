@@ -1,4 +1,4 @@
-import hero from "../assets/plants/hero.png";
+//import hero from "../assets/plants/hero.png";
 
 import snake from "../assets/plants/snake.png";
 import aglaonema from "../assets/plants/aglaonema.png";
@@ -8,7 +8,7 @@ import monstera from "../assets/plants/monstera.png";
 import cactus from "../assets/plants/cactus.png";
 import agave from "../assets/plants/agave.png";
 
-export const heroPlant = hero;
+export const heroPlant = agi;
 
 export const trendyPlants = [
   {

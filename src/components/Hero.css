@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Outfit",sans-serif;
 }
 
 .hero{
@@ -46,7 +45,7 @@
 
 }
 
-..hero-overlay{
+.hero-overlay{
 
     width:92%;
 
@@ -268,7 +267,7 @@
               PRODUCT GLASS CARD
 ==================================================*/
 
-..product-card{
+.product-card{
 
     width:400px;
 
@@ -329,7 +328,7 @@
                 PLANT IMAGE
 ==================================================*/
 
-..hero-plant{
+.hero-plant{
 
     width:310px;
 
